@@ -9,25 +9,27 @@
     <title>Document</title>
 </head>
 <body>
-    <div id="father-container" class="my_50px m_0_auto w_50 p_20px bg_1389B2 h_400px border_rad_20px d_flex flex_wrap justify_content_center">
+    <div id="father-container" class="my_50px m_0_auto w_50 p_20px bg_FFD166 h_400px border_rad_20px d_flex flex_wrap justify_content_center">
         <h1 class="">Gioco dei dadi</h1>
 
         <div class="d_flex justify_content_around w_100">
             <div id="container-1" class="d_flex flex_direction_column align_items_center">
                 <button class="btn_basic mb_10px" onclick="myGamble()">Tira il tuo dado</button>
                 <div id="container-1-img-div">
-                    <img class="w_100px h_100px" src="./asset/img/6facce.png" alt="">
+                    <img id="container-1-img" class="w_100px h_100px" src="./asset/img/6facce.png" alt="">
                 </div>
             </div>
     
             <div id="container-2" class="d_flex flex_direction_column align_items_center v_hidden">
                 <button class="btn_basic mb_10px" onclick="botGamble(); finalResoult()">Tira il dado del computer</button>
-                <div id="container-2-img-div"></div>
+                <div id="container-2-img-div">
+                    <img id="container-2-img" class="w_100px h_100px" src="./asset/img/6facce.png" alt="">
+                </div>
             </div>
         </div>
 
-        <div class="">
-            <div id="container-3" class="mb_10px"></div>
+        <div class="text_centered">
+            <div id="container-3" class="mb_10px fs_3em"></div>
             <button id="play-again-btn" class="btn_basic v_hidden" onclick="window.location.reload()">Play again</button>
         </div>
     </div>
