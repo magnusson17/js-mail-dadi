@@ -9,7 +9,7 @@
     <title>Document</title>
 </head>
 <body>
-    <div id="father-container" class="my_50px w_50 m_0_auto">
+    <div id="father-container" class="my_50px w_50 m_0_auto bg_1389B2">
         <h1 class="w_100 text_centered">Gioco dei dadi</h1>
 
         <div class="d_flex justify_content_around">
@@ -18,13 +18,15 @@
                 <div id="container-1-img-div"></div>
             </div>
     
-            <div id="container-2">
-                <button onclick="botGamble()">Tira il dado del computer</button>
+            <div id="container-2" class="v_hidden">
+                <button onclick="botGamble(); finalResoult()">Tira il dado del computer</button>
                 <div id="container-2-img-div"></div>
             </div>
         </div>
+        
+        <div id="container-3"></div>
+        <button onclick="window.location.reload()">Play again</button>
     </div>
-    <button onclick="window.location.reload()">Play again</button>
 
     <script type="text/javascript" src="./asset/js/main.js"></script>
 </body>

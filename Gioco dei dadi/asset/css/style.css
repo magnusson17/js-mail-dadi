@@ -38,6 +38,14 @@
 .w_75_vw {
     width: 75vw;
 }
+
+.w_100px {
+    width: 100px;
+}
+/*height*/
+.h_100px {
+    height: 100px;
+}
 /*text property*/
 .text_centered {
     text-align: center;
@@ -109,7 +117,8 @@
 .d_none {
     display: none;
 }
-/*specific classes*/
-.bg_img {
-    background-image: url(../img/dado1.png);
+
+.v_hidden {
+    visibility: hidden;
 }
+/*specific classes*/
