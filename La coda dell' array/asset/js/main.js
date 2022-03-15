@@ -10,6 +10,6 @@ let exArray = [];
 let containeR2 = document.getElementById("container2");
 
 for (i = 0; i < userChoice; i++) {
-    containeR2.innerHTML += `<div></div>`
-    containeR.innerHTML += `<div>${mioArray[i]}</div>`
+    exArray.push(Math.floor(Math.random() * 100) + 1)
+    containeR2.innerHTML += `<div>${exArray[i]}</div>`
 }
