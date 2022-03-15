@@ -21,6 +21,7 @@ function totArrayElements() {
     } else {
         container2.innerHTML = `<p>Il tuo array contiene ${numElAr.value} elementi, essi sono:`
         for (i = 0; i < numElAr.value; i++) {
+            // gli sto pushando, numElAr.value volte, un numero random tra 1 e 100
             exArray.push(Math.floor(Math.random() * 100) + 1);
             container2.innerHTML += `<li class="py_5px">${exArray[i]}</li>`;
         }
