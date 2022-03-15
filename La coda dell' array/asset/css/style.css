@@ -70,4 +70,8 @@
 .d_inline_block {
     display: inline-block;
 }
+
+.d_block {
+    display: block;
+}
 /*specific classes*/

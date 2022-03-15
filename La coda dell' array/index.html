@@ -9,11 +9,22 @@
     <title>Document</title>
 </head>
 <body>
-    <div id="container_father" class="w_100 text_centered my_50px">
+    <div id="container_father" class="w_100 my_50px">
 
         <div id="container">Primo esercizio: </div>
+
+        <div id="container-2">
+            <label class="d_block" for="numElAr">Qunti elementi deve contenere il tuo array?</label>
+            <input id="num-el-ar" type="number" min="1" placeholder="Inserisci un numero">
+            <button onclick="totArrayElements()">Avanti</button>
     
-        <div id="container2"></div>
+        </div>
+        
+        <div id="container-3">
+            <label class="d_block" for="numElArPullOut">Qunti elementi vuoi estrarre dal fondo del array?</label>
+            <input id="num-el-ar-pull-out" type="text" min="0" placeholder="Inserisci un numero">
+            <button onclick="dalateTotElements()">Avanti</button>
+        </div>
 
     </div>
 
