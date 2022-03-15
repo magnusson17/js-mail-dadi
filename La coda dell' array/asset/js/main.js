@@ -13,24 +13,35 @@ let numElArPullOut = document.getElementById("num-el-ar-pull-out");
 let exArray = [];
 let container2 = document.getElementById("container-2");
 let container3 = document.getElementById("container-3");
+let container4 = document.getElementById("container-4");
 
 function totArrayElements() {
     if (isNaN(numElAr.value)) {
-        alert("ERRORE, ricaricare la pagina")
+        alert("ERRORE, ricaricare la pagina");
     } else {
+        container2.innerHTML = `<p>Il tuo array contiene ${numElAr.value} elementi, essi sono:`
         for (i = 0; i < numElAr.value; i++) {
-            exArray.push(Math.floor(Math.random() * 100) + 1)
-            container2.innerHTML += `<div>${exArray[i]}</div>`
+            exArray.push(Math.floor(Math.random() * 100) + 1);
+            container2.innerHTML += `<div>${exArray[i]}</div>`;
         }
     }
+
+    container3.classList.remove("d_none");
 }
 /*es 2 parte 2, chiedere all'utente anche quanti elementi vanno estratti dal fondo dell'array.*/
 function dalateTotElements() {
     if (isNaN(numElArPullOut.value)) {
-        alert("ERRORE, ricaricare la pagina")
+        alert("ERRORE, ricaricare la pagina");
     } else {
+        if (numElArPullOut.value === numElAr.value) {
+            container3.innerHTML = `<p>Hai estratto tutti gli elementi dal tuo array.</p>`
+        } else {
+            container3.innerHTML = `<p>Hai estratto gli ultimi ${numElArPullOut.value} elementi dal tuo array, gli elementi ora rimanenti sono:`
+        }
         for (i = 0; i < exArray.length - numElArPullOut.value; i++) {
-            container3.innerHTML += `<div>${exArray[i]}</div>`
+            container3.innerHTML += `<div>${exArray[i]}</div>`;
         }
     }
+
+    container4.classList.remove("d_none");
 }

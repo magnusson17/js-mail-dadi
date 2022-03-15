@@ -58,6 +58,10 @@
 .p_20px {
     padding: 20px;
 }
+
+.ps_50px {
+    padding-left: 50px;
+}
 /*display*/
 .d_flex {
     display: flex;
@@ -73,5 +77,9 @@
 
 .d_block {
     display: block;
+}
+
+.d_none {
+    display: none;
 }
 /*specific classes*/
