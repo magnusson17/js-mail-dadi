@@ -5,6 +5,7 @@ let container1ImgDiv = document.getElementById("container-1-img-div");
 let container2 = document.getElementById("container-2");
 let container2ImgDiv = document.getElementById("container-2-img-div");
 let container3 = document.getElementById("container-3");
+let playAgainBtn = document.getElementById("play-again-btn")
 
 function myGamble() {
     myChoice = Math.floor(Math.random() * 6) + 1;
@@ -22,4 +23,6 @@ function botGamble() {
     } else {
         container3.innerHTML = `<p>It's a tie</p>`;
     }
+
+    playAgainBtn.classList.remove("v_hidden");
 }
