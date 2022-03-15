@@ -1,0 +1,115 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato&family=Roboto&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Lato', sans-serif;
+    font-family: 'Roboto', sans-serif;
+}
+/*bg color*/
+.bg_F0466F {
+    background-color: #F0466F;
+}
+
+.bg_0BD6A1 {
+    background-color: #0BD6A1;
+}
+
+.bg_FFD166 {
+    background-color: #FFD166;
+}
+
+.bg_1389B2 {
+    background-color: #1389B2;
+}
+
+.bg_083B4C {
+    background-color: #083B4C;
+}
+/*width*/
+.w_100 {
+    width: 100%;
+}
+
+.w_50 {
+    width: 50%;
+}
+
+.w_75_vw {
+    width: 75vw;
+}
+/*text property*/
+.text_centered {
+    text-align: center;
+}
+
+.text_white {
+    color: white;
+}
+
+.fs_4em {
+    font-size: 4em;
+}
+/*margin*/
+.m_0_auto {
+    margin: 0 auto;
+}
+
+.my_50px {
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.mb_10px {
+    margin-bottom: 10px;
+}
+/*padding*/
+.p_20px {
+    padding: 20px;
+}
+
+.py_5px {
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+.px_5px {
+    padding-right: 5px;
+    padding-left: 5px;
+}
+
+.ps_50px {
+    padding-left: 50px;
+}
+/*display*/
+.d_flex {
+    display: flex;
+}
+
+.justify_content_center {
+    justify-content: center;
+}
+
+.justify_content_between {
+    justify-content: space-between;
+}
+
+.justify_content_around {
+    justify-content: space-around;
+}
+
+.d_inline_block {
+    display: inline-block;
+}
+
+.d_block {
+    display: block;
+}
+
+.d_none {
+    display: none;
+}
+/*specific classes*/
+.bg_img {
+    background-image: url(../img/dado1.png);
+}

@@ -4,11 +4,25 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="./asset/css/style.css">
     <title>Document</title>
 </head>
 <body>
-    <div id="container">
-        <button onclick="gamble()">Start</button>
+    <div id="father-container" class="my_50px w_50 m_0_auto">
+        <h1 class="w_100 text_centered">Gioco dei dadi</h1>
+
+        <div class="d_flex justify_content_around">
+            <div id="container-1">
+                <button onclick="myGamble()">Tira il tuo dado</button>
+                <div id="container-1-img-div"></div>
+            </div>
+    
+            <div id="container-2">
+                <button onclick="botGamble()">Tira il dado del computer</button>
+                <div id="container-2-img-div"></div>
+            </div>
+        </div>
     </div>
     <button onclick="window.location.reload()">Play again</button>
 
