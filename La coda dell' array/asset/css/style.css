@@ -52,11 +52,26 @@
 }
 
 .my_50px {
-    margin: 50px 0;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.mb_10px {
+    margin-bottom: 10px;
 }
 /*padding*/
 .p_20px {
     padding: 20px;
+}
+
+.py_5px {
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+.px_5px {
+    padding-right: 5px;
+    padding-left: 5px;
 }
 
 .ps_50px {

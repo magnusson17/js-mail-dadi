@@ -11,23 +11,26 @@
 <body>
     <div id="container_father" class="w_100 my_50px ps_50px">
 
-        <div id="container">Primo esercizio: </div>
+        <div id="container">
+            <h3>Primo esercizio:</h3> 
+        </div>
+
+        <h3 class="mb_10px">Secondo esercizio: </h3>
 
         <div id="container-2">
-            <label class="d_block" for="numElAr">Qunti elementi deve contenere il tuo array?</label>
-            <input id="num-el-ar" type="number" min="1" placeholder="Inserisci un numero">
-            <button onclick="totArrayElements()">Avanti</button>
-    
+            <label class="d_block mb_10px" for="numElAr">Qunti elementi deve contenere il tuo array?</label>
+            <input id="num-el-ar" type="number" min="1" class="py_5px" placeholder="Inserisci un numero">
+            <button onclick="totArrayElements()" class="py_5px px_5px">Avanti</button>
         </div>
         
         <div id="container-3" class="d_none">
-            <label class="d_block" for="numElArPullOut">Qunti elementi vuoi estrarre dal fondo del array?</label>
-            <input id="num-el-ar-pull-out" type="text" min="0" placeholder="Inserisci un numero">
-            <button onclick="dalateTotElements()">Avanti</button>
+            <label class="d_block mb_10px" for="numElArPullOut">Qunti elementi vuoi estrarre dal fondo del array?</label>
+            <input id="num-el-ar-pull-out" type="number" min="0" class="py_5px" placeholder="Inserisci un numero">
+            <button onclick="dalateTotElements()" class="py_5px">Avanti</button>
         </div>
 
         <div id="container-4" class="d_none">
-            <button onclick="window.location.reload()">Riprova</button>
+            <button onclick="window.location.reload()" class="py_5px">Riprova</button>
         </div>
 
     </div>

@@ -22,7 +22,7 @@ function totArrayElements() {
         container2.innerHTML = `<p>Il tuo array contiene ${numElAr.value} elementi, essi sono:`
         for (i = 0; i < numElAr.value; i++) {
             exArray.push(Math.floor(Math.random() * 100) + 1);
-            container2.innerHTML += `<div>${exArray[i]}</div>`;
+            container2.innerHTML += `<li class="py_5px">${exArray[i]}</li>`;
         }
     }
 
@@ -39,7 +39,7 @@ function dalateTotElements() {
             container3.innerHTML = `<p>Hai estratto gli ultimi ${numElArPullOut.value} elementi dal tuo array, gli elementi ora rimanenti sono:`
         }
         for (i = 0; i < exArray.length - numElArPullOut.value; i++) {
-            container3.innerHTML += `<div>${exArray[i]}</div>`;
+            container3.innerHTML += `<li class="py_5px">${exArray[i]}</li>`;
         }
     }
 
