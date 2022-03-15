@@ -18,11 +18,11 @@ function botGamble() {
     botChoice = Math.floor(Math.random() * 6) + 1;
     container2Img.src = `./asset/img/dado${botChoice}.png`;
     if (myChoice > botChoice) {
-        container3.innerHTML = `<p class="text_green">You won!</p>`;
+        container3.innerHTML = `<p class="text_green">You won! <i class="fa-solid fa-face-laugh-squint"></i></p>`;
     } else if (myChoice < botChoice) {
-        container3.innerHTML = `<p class="text_red">You lost</p>`;
+        container3.innerHTML = `<p class="text_red">You lost <i class="fa-solid fa-face-frown"></i></p>`;
     } else {
-        container3.innerHTML = `<p class="">It's a tie</p>`;
+        container3.innerHTML = `<p class="">It's a tie <i class="fa-solid fa-face-meh"></i></p>`;
     }
 
     playAgainBtn.classList.remove("v_hidden");
