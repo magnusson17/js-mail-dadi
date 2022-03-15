@@ -25,5 +25,6 @@ function botGamble() {
         container3.innerHTML = `<p class="">It's a tie <i class="fa-solid fa-face-meh"></i></p>`;
     }
 
+    container3.classList.remove("v_hidden");
     playAgainBtn.classList.remove("v_hidden");
 }
