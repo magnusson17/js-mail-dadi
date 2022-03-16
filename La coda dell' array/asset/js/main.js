@@ -36,7 +36,10 @@ function dalateTotElements() {
     } else {
         if (numElArPullOut.value === numElAr.value) {
             container3.innerHTML = `<p>Hai estratto tutti gli elementi dal tuo array.</p>`
-        } else {
+        } else if (numElArPullOut.value > numElAr.value) {
+            container3.innerHTML = `<p>Hai estratto dal tuo array più elementi di quanti esso ne conteneva.</p>`
+        }
+         else {
             container3.innerHTML = `<p>Hai estratto gli ultimi ${numElArPullOut.value} elementi dal tuo array, gli elementi ora rimanenti sono:`
         }
         for (i = 0; i < exArray.length - numElArPullOut.value; i++) {
